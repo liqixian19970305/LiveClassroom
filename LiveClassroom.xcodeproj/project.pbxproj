@@ -13,6 +13,10 @@
 		5598B11A2026563400347276 /* LiveClassroom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5598B1182026563400347276 /* LiveClassroom.xcdatamodeld */; };
 		5598B11C2026563400347276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5598B11B2026563400347276 /* Assets.xcassets */; };
 		5598B11F2026563400347276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5598B11D2026563400347276 /* LaunchScreen.storyboard */; };
+		5598B1432026906400347276 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598B13F2026906300347276 /* ProfileCell.swift */; };
+		5598B1442026906400347276 /* VideoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598B1402026906300347276 /* VideoSession.swift */; };
+		5598B1452026906400347276 /* VideoViewLayouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598B1412026906300347276 /* VideoViewLayouter.swift */; };
+		5598B1462026906400347276 /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598B1422026906400347276 /* KeyCenter.swift */; };
 		9ECB03A9DB8DA9CB76027C18 /* Pods_LiveClassroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DC2586B425912C1DEE8247 /* Pods_LiveClassroom.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,10 @@
 		5598B11B2026563400347276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5598B11E2026563400347276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5598B1202026563400347276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5598B13F2026906300347276 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		5598B1402026906300347276 /* VideoSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSession.swift; sourceTree = "<group>"; };
+		5598B1412026906300347276 /* VideoViewLayouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewLayouter.swift; sourceTree = "<group>"; };
+		5598B1422026906400347276 /* KeyCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
 		8BF7E1FFD875F51778B1B79A /* Pods-LiveClassroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveClassroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom.debug.xcconfig"; sourceTree = "<group>"; };
 		D1525BF672DA7867221FB8FD /* Pods-LiveClassroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveClassroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +82,10 @@
 				5598B1112026563400347276 /* AppDelegate.swift */,
 				5598B1132026563400347276 /* ViewController.swift */,
 				5598B1152026563400347276 /* Main.storyboard */,
+				5598B1422026906400347276 /* KeyCenter.swift */,
+				5598B13F2026906300347276 /* ProfileCell.swift */,
+				5598B1402026906300347276 /* VideoSession.swift */,
+				5598B1412026906300347276 /* VideoViewLayouter.swift */,
 				5598B11B2026563400347276 /* Assets.xcassets */,
 				5598B11D2026563400347276 /* LaunchScreen.storyboard */,
 				5598B1202026563400347276 /* Info.plist */,
@@ -220,7 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5598B1442026906400347276 /* VideoSession.swift in Sources */,
 				5598B11A2026563400347276 /* LiveClassroom.xcdatamodeld in Sources */,
+				5598B1432026906400347276 /* ProfileCell.swift in Sources */,
+				5598B1452026906400347276 /* VideoViewLayouter.swift in Sources */,
+				5598B1462026906400347276 /* KeyCenter.swift in Sources */,
 				5598B1142026563400347276 /* ViewController.swift in Sources */,
 				5598B1122026563400347276 /* AppDelegate.swift in Sources */,
 			);
