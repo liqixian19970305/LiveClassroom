@@ -18,6 +18,8 @@
 		5598B1452026906400347276 /* VideoViewLayouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598B1412026906300347276 /* VideoViewLayouter.swift */; };
 		5598B1462026906400347276 /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598B1422026906400347276 /* KeyCenter.swift */; };
 		55CE64B42026934E000779FD /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CE64B22026934D000779FD /* Test.storyboard */; };
+		55CE64B72026947B000779FD /* LiveRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE64B52026947A000779FD /* LiveRoomViewController.swift */; };
+		55CE64B82026947B000779FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE64B62026947A000779FD /* MainViewController.swift */; };
 		9ECB03A9DB8DA9CB76027C18 /* Pods_LiveClassroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DC2586B425912C1DEE8247 /* Pods_LiveClassroom.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		5598B1412026906300347276 /* VideoViewLayouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewLayouter.swift; sourceTree = "<group>"; };
 		5598B1422026906400347276 /* KeyCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
 		55CE64B32026934D000779FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Test.storyboard; sourceTree = "<group>"; };
+		55CE64B52026947A000779FD /* LiveRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomViewController.swift; sourceTree = "<group>"; };
+		55CE64B62026947A000779FD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8BF7E1FFD875F51778B1B79A /* Pods-LiveClassroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveClassroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom.debug.xcconfig"; sourceTree = "<group>"; };
 		D1525BF672DA7867221FB8FD /* Pods-LiveClassroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveClassroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				5598B1112026563400347276 /* AppDelegate.swift */,
-				5598B1132026563400347276 /* ViewController.swift */,
 				5598B1152026563400347276 /* Main.storyboard */,
 				55CE64B22026934D000779FD /* Test.storyboard */,
+				55CE64B92026948C000779FD /* ViewControllers */,
 				5598B1422026906400347276 /* KeyCenter.swift */,
 				5598B13F2026906300347276 /* ProfileCell.swift */,
 				5598B1402026906300347276 /* VideoSession.swift */,
@@ -95,6 +99,16 @@
 				5598B1182026563400347276 /* LiveClassroom.xcdatamodeld */,
 			);
 			path = LiveClassroom;
+			sourceTree = "<group>";
+		};
+		55CE64B92026948C000779FD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5598B1132026563400347276 /* ViewController.swift */,
+				55CE64B52026947A000779FD /* LiveRoomViewController.swift */,
+				55CE64B62026947A000779FD /* MainViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		68C6F39604E3478D34506E3E /* Pods */ = {
@@ -239,8 +253,10 @@
 				5598B1442026906400347276 /* VideoSession.swift in Sources */,
 				5598B11A2026563400347276 /* LiveClassroom.xcdatamodeld in Sources */,
 				5598B1432026906400347276 /* ProfileCell.swift in Sources */,
+				55CE64B72026947B000779FD /* LiveRoomViewController.swift in Sources */,
 				5598B1452026906400347276 /* VideoViewLayouter.swift in Sources */,
 				5598B1462026906400347276 /* KeyCenter.swift in Sources */,
+				55CE64B82026947B000779FD /* MainViewController.swift in Sources */,
 				5598B1142026563400347276 /* ViewController.swift in Sources */,
 				5598B1122026563400347276 /* AppDelegate.swift in Sources */,
 			);
