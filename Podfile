@@ -8,5 +8,5 @@ target 'LiveClassroom' do
 
   # Pods for LiveClassroom
     #pod 'GoogleMaps', '~> 2.5'
-    pod 'Agora-Native-SDK-FULL', '~> 2.2'
+    pod 'AgoraRtcEngine_iOS', '~> 2.0'
 end
