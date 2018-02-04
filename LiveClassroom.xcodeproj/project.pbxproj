@@ -13,9 +13,11 @@
 		5598B11A2026563400347276 /* LiveClassroom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5598B1182026563400347276 /* LiveClassroom.xcdatamodeld */; };
 		5598B11C2026563400347276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5598B11B2026563400347276 /* Assets.xcassets */; };
 		5598B11F2026563400347276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5598B11D2026563400347276 /* LaunchScreen.storyboard */; };
+		9ECB03A9DB8DA9CB76027C18 /* Pods_LiveClassroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DC2586B425912C1DEE8247 /* Pods_LiveClassroom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17DC2586B425912C1DEE8247 /* Pods_LiveClassroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveClassroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5598B10E2026563400347276 /* LiveClassroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveClassroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5598B1112026563400347276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5598B1132026563400347276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		5598B11B2026563400347276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5598B11E2026563400347276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5598B1202026563400347276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF7E1FFD875F51778B1B79A /* Pods-LiveClassroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveClassroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom.debug.xcconfig"; sourceTree = "<group>"; };
+		D1525BF672DA7867221FB8FD /* Pods-LiveClassroom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveClassroom.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ECB03A9DB8DA9CB76027C18 /* Pods_LiveClassroom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		347094935C1E895AA9F7CA26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17DC2586B425912C1DEE8247 /* Pods_LiveClassroom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5598B1052026563300347276 = {
 			isa = PBXGroup;
 			children = (
 				5598B1102026563400347276 /* LiveClassroom */,
 				5598B10F2026563400347276 /* Products */,
+				68C6F39604E3478D34506E3E /* Pods */,
+				347094935C1E895AA9F7CA26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = LiveClassroom;
 			sourceTree = "<group>";
 		};
+		68C6F39604E3478D34506E3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BF7E1FFD875F51778B1B79A /* Pods-LiveClassroom.debug.xcconfig */,
+				D1525BF672DA7867221FB8FD /* Pods-LiveClassroom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5598B1232026563400347276 /* Build configuration list for PBXNativeTarget "LiveClassroom" */;
 			buildPhases = (
+				AD925337671E37591A3CB278 /* [CP] Check Pods Manifest.lock */,
 				5598B10A2026563400347276 /* Sources */,
 				5598B10B2026563400347276 /* Frameworks */,
 				5598B10C2026563400347276 /* Resources */,
+				755E86FA74104AAD9FCB6C22 /* [CP] Embed Pods Frameworks */,
+				54C077EF8E41DF0A0F214B81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54C077EF8E41DF0A0F214B81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755E86FA74104AAD9FCB6C22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveClassroom/Pods-LiveClassroom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD925337671E37591A3CB278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveClassroom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5598B10A2026563400347276 /* Sources */ = {
@@ -276,11 +357,13 @@
 		};
 		5598B1242026563400347276 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF7E1FFD875F51778B1B79A /* Pods-LiveClassroom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HW277PH2D;
 				INFOPLIST_FILE = LiveClassroom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TonyLi.LiveClassroom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,11 +374,13 @@
 		};
 		5598B1252026563400347276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1525BF672DA7867221FB8FD /* Pods-LiveClassroom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HW277PH2D;
 				INFOPLIST_FILE = LiveClassroom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TonyLi.LiveClassroom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
